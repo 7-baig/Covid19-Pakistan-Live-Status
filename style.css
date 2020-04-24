@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF3B3F;
+}
+header img {
+    height: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9B000;
+}
+.boxes {
+    border: 1px solid black;
+    height: 180px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #008F95;
+    box-shadow: 6px 6px 6px black;
+}
+.boxes h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.boxes p {
+    font-size: 1.6em;
+    font-family: monospace; 
+    font-weight: bold;
+    margin-top: 5px;
+    color: maroon;
+}
+
+#source {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+a {
+    color: #FF3B3F;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover {
+    color: #008F95;
+}
+
+/* ============== */
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+    header img {
+        height: 60px;
+    }
+    header h1 {
+        font-size: 1em;
+
+    }
+    #container {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .boxes {
+        border: none;
+        height: auto;
+        width: auto;
+        margin: 10px;
+        box-shadow: 2px 2px 2px black;
+        padding: 10px;
+    }
+    .boxes h3 {
+        font-size: 1.2em;
+        margin-bottom: 2px;
+    }
+    .boxes p {
+        font-size: 1.2em;
+        margin-top: 2px;
+}
+    html, body {
+        height: auto;
+        width: auto;
+    }
+  }
